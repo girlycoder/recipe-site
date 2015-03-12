@@ -1,0 +1,20 @@
+<div ng-controller="recipeCtrl" class="pace-done">
+  <div class="section">
+      <div class="container">
+        <div class="col-lg-12 text-center">
+            <h2>Display Some Work on the Home Page Portfolio</h2>
+            <hr>
+        </div>
+          <div class="row"  ng-repeat="array in mainRecipes">
+            <div class="recipe">
+              <div class="col-lg-4 col-md-4 col-sm-6" ng-repeat="recipeObj in array">
+                  <a href="#">
+                      <img ng-src="{{recipeObj.img_url}}" class="img-responsive img-home-portfolio">
+                  </a>
+                  <p>{{recipeObj.title}}</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>

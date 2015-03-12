@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html ng-app="recipeApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="views/recipeList/recipeList.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+</head>
+<body>
+  <!--
+  <ul class="menu">
+    <li><a href="#/recipeList">recipeList</a></li>
+    <li><a href="#/shoppingList">shoppingList</a></li>
+  </ul> -->
+  <div class="pace pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="width:100%;">
+      <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+  </div>
+
+  <header class="header">
+  <nav class="navbar navbar-montere animated navbar-fixed-top navbar-mobile navbar-inverse" role="navigation" style="opacity:1; top: 0px;">
+    <div class="navbar-header">
+      <a class="navbar-brand animated" href="/?lang=en"></a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul id="main-nav" class="nav navbar-nav">
+        <li><span class="line"><a href="#/recipeList">RECIPES</a></span></li>
+        <li><span class="line"><a href="#/shoppingList"> RECIPE BOOK</a></span></li>
+        <li><span class="line"><a href="#"> PLANNER</a></span></li>
+        <li><span class="line"><a href="#"> SHOPPING LIST</a></span></li>
+        <li><span class="line"><a href="#"> MY ACCOUNT</a></span></li>
+      </ul>
+    </div
+  </nav>
+</header>
+
+  <div class="view-manager" ng-view></div>
+
+  <script src="components/angular/angular.min.js"></script>
+  <script src="components/angular-route/angular-route.min.js"></script>
+  <script src="recipe-app.js"></script>
+  <script src="views/recipeList/recipeList.js"></script>
+  <script src="views/shoppingList/shoppingList.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</body>
+</html>
